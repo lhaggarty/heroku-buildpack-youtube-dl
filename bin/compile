@@ -12,5 +12,5 @@ VENDOR_DIR="vendor"
 cd BUILD_DIR
 cd VENDOR_DIR
 
-sudo curl https://yt-dl.org/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl
+curl https://yt-dl.org/latest/youtube-dl
+chmod a+rx /usr/local/bin/youtube-dl
