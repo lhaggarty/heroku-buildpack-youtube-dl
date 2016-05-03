@@ -13,4 +13,3 @@ cd BUILD_DIR
 cd VENDOR_DIR
 
 curl https://yt-dl.org/latest/youtube-dl
-chmod a+rx /usr/local/bin/youtube-dl
