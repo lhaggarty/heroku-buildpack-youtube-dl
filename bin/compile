@@ -12,5 +12,4 @@ VENDOR_DIR="vendor"
 cd BUILD_DIR
 cd VENDOR_DIR
 
-curl https://yt-dl.org/latest/youtube-dl -o /usr/local/bin/youtube-dl
-chmod a+x /usr/local/bin/youtube-dl
+brew install youtube-dl
