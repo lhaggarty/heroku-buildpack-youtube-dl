@@ -10,8 +10,7 @@ BUILD_DIR=$1
 VENDOR_DIR="vendor"
 
 
-PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
-mkdir -p $(dirname $PROFILE_PATH)
+PROFILE_PATH="$BUILD_DIR/.profile.d/linuxbrew.sh"
 cat << _EOT_ > $PROFILE_PATH
 export PATH="\$HOME/.linuxbrew/bin:\$PATH"
 export MANPATH="\$HOME/.linuxbrew/share/man:\$MANPATH"
@@ -20,5 +19,6 @@ export LD_LIBRARY_PATH="\$HOME/.linuxbrew/lib:\$LD_LIBRARY_PATH"
 _EOT_
 
 . $PROFILE_PATH
+cat $PROFILE_PATH | indent
 
 brew install youtube-dl
