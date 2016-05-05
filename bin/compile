@@ -6,10 +6,7 @@ indent() {
 
 echo "-----> Installing youtube-dl"
 
-BUILD_DIR=$1
-VENDOR_DIR="vendor"
 
-cd BUILD_DIR
-cd VENDOR_DIR
 
-brew install youtube-dl
+curl https://yt-dl.org/latest/youtube-dl -o ~/usr/local/bin/youtube-dl
+chmod a+rx /usr/local/bin/youtube-dl
