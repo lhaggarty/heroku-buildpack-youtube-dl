@@ -9,4 +9,4 @@ echo "-----> Installing youtube-dl"
 
 
 curl https://yt-dl.org/latest/youtube-dl -o ~/usr/local/bin/youtube-dl
-chmod a+rx /usr/local/bin/youtube-dl
+chmod a+rx ~/usr/local/bin/youtube-dl
