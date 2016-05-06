@@ -25,4 +25,5 @@ cd $HOME
 cd ..
 cd /usr/local/bin
 mkdir -p youtube-dl
-curl $DOWNLOAD_URL
+cd youtube-dl
+curl --silent $DOWNLOAD_URL
