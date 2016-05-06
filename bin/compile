@@ -8,7 +8,7 @@ echo "-----> Installing youtube-dl"
 
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
-
+APP_DIR="\$HOME\$PATH"
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
 mkdir -p $(dirname $PROFILE_PATH)
@@ -19,6 +19,7 @@ export INFOPATH="\$HOME/.linuxbrew/share/info:\$INFOPATH"
 export LD_LIBRARY_PATH="\$HOME/.linuxbrew/lib:\$LD_LIBRARY_PATH"
 _EOT_
 
-. $HOME
+. $APP_DIR
+cat $APP_DIR | indent
 
 rake moviemasher:install_youtube_dl
