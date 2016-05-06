@@ -12,4 +12,4 @@ APP_DIR="vendor"
 cd $BUILD_DIR
 cd $APP_DIR
 
-gem install youtube-dl
+brew install youtube-dl
