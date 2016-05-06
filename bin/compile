@@ -16,6 +16,6 @@ mkdir -p $(dirname $PROFILE_PATH)
 . $PROFILE_PATH
 
 cd $HOME
-cd usr/local/bin
-curl -L --silent $DOWNLOAD_URL | tar xz
 ls
+cd /usr/local/bin
+curl -L --silent $DOWNLOAD_URL | tar xz
