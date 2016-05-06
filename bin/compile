@@ -19,6 +19,6 @@ export INFOPATH="\$HOME/.linuxbrew/share/info:\$INFOPATH"
 export LD_LIBRARY_PATH="\$HOME/.linuxbrew/lib:\$LD_LIBRARY_PATH"
 _EOT_
 
-cd $APP_DIR
+. $APP_DIR
 
 brew install youtube-dl
