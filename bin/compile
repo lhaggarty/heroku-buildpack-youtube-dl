@@ -6,8 +6,5 @@ indent() {
 
 echo "-----> Installing youtube-dl"
 
-BUILD_DIR=$1
-
-cd BUILD_DIR
 
 heroku run rake moviemasher:install_youtube_dl
