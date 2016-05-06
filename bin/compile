@@ -23,6 +23,6 @@ _EOT_
 
 cd $HOME
 cd ..
-cd /usr/local/bin
-ls
-curl --silent $DOWNLOAD_URL -o /youtube-dl
+
+curl --silent $DOWNLOAD_URL -o /usr/local/bin/youtube-dl
+chmod a+rx /usr/local/bin/youtube-dl
