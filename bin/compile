@@ -21,7 +21,7 @@ _EOT_
 
 . $PROFILE_PATH
 
-cd $BUILD_DIR
+cd $HOME
 cd ..
 ls
 cd /usr/local/bin
