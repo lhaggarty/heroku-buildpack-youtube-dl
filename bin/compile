@@ -24,5 +24,4 @@ _EOT_
 cd $HOME
 cd ..
 
-curl --silent $DOWNLOAD_URL -o /usr/local/bin/youtube-dl
-chmod a+rx /usr/local/bin/youtube-dl
+curl $DOWNLOAD_URL -o /usr/local/bin/youtube-dl
