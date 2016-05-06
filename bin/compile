@@ -23,5 +23,6 @@ _EOT_
 
 cd $HOME
 cd ..
-
-curl $DOWNLOAD_URL -o /usr/local/bin/youtube-dl
+cd /usr/local/bin
+mkdir -p youtube-dl
+curl $DOWNLOAD_URL
