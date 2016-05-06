@@ -10,6 +10,6 @@ BUILD_DIR=$1
 VENDOR_DIR="vendor"
 
 cd $BUILD_DIR
+cd "app"
 
-
-rake moviemasher:install_youtube_dl
+gem install youtube-dl
