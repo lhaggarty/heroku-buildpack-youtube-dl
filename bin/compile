@@ -8,7 +8,7 @@ echo "-----> Installing youtube-dl"
 
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
-RAKE_TASK="moviemasher:install_youtube_dl"
+RAKE_TASK=" moviemasher:install_youtube_dl"
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
 mkdir -p $(dirname $PROFILE_PATH)
