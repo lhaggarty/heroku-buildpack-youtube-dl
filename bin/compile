@@ -10,10 +10,6 @@ BUILD_DIR=$1
 VENDOR_DIR="vendor"
 DOWNLOAD_URL="https://yt-dl.org/latest/youtube-dl"
 
-cd $HOME
-cd ..
-mkdir -p /usr/local/bin/youtube-dl
-
 PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 cat << _EOT_ > $PROFILE_PATH
@@ -27,6 +23,9 @@ _EOT_
 
 cd $HOME
 cd ..
+chmod a+rx /usr/local/bin/
+
 cd /usr/local/bin
+mkdir -p youtube-dl
 cd youtube-dl
-curl -L --silent $DOWNLOAD_URL
+curl -L --silent $DOWNLOAD_URL | tar xz
