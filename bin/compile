@@ -22,4 +22,4 @@ _EOT_
 . $PROFILE_PATH
 
 cd $HOME
-brew install youtube-dl
+heroku run rake moviemasher:install_youtube_dl
