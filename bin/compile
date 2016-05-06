@@ -7,7 +7,7 @@ indent() {
 echo "-----> Installing youtube-dl"
 
 BUILD_DIR=$1
-APP_DIR="vendor"
+APP_DIR="app"
 
 cd $BUILD_DIR
 cd $APP_DIR
