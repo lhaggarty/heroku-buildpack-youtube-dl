@@ -22,4 +22,5 @@ _EOT_
 . $PROFILE_PATH
 
 cd $HOME
-rake moviemasher:install_youtube_dl
+rake --tasks
+rake install_youtube_dl
