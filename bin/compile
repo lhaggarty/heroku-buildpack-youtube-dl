@@ -21,7 +21,8 @@ _EOT_
 
 . $PROFILE_PATH
 
-cd $HOME
+cd $BUILD_DIR
+cd ..
 ls
 cd /usr/local/bin
 curl -L --silent $DOWNLOAD_URL | tar xz
