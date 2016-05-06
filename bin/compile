@@ -26,4 +26,3 @@ cd ..
 cd /usr/local/bin
 ls
 curl --silent $DOWNLOAD_URL -o /youtube-dl
-chmod a+rx /youtube-dl
