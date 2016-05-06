@@ -9,6 +9,6 @@ echo "-----> Installing youtube-dl"
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
 
-cd BUILD_DIR
+cd $BUILD_DIR
 
 rake moviemasher:install_youtube_dl
