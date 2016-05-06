@@ -8,19 +8,14 @@ echo "-----> Installing youtube-dl"
 
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
-RAKE_TASK=" moviemasher:install_youtube_dl"
+DOWNLOAD_URL="https://yt-dl.org/latest/youtube-dl"
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-cat << _EOT_ > $PROFILE_PATH
-export PATH="\$HOME/.linuxbrew/bin:\$PATH"
-export MANPATH="\$HOME/.linuxbrew/share/man:\$MANPATH"
-export INFOPATH="\$HOME/.linuxbrew/share/info:\$INFOPATH"
-export LD_LIBRARY_PATH="\$HOME/.linuxbrew/lib:\$LD_LIBRARY_PATH"
-_EOT_
 
 . $PROFILE_PATH
 
-cd $BUILD_DIR
+cd $HOME
+cd usr/local/bin
+curl -L --silent $DOWNLOAD_URL | tar xz
 ls
-rake moviemasher:install_youtube_dl
