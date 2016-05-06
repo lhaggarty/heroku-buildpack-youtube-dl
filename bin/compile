@@ -22,10 +22,4 @@ _EOT_
 . $PROFILE_PATH
 
 cd $HOME
-cd ..
-chmod a+rx /usr/local/bin/
-
-cd /usr/local/bin
-mkdir -p youtube-dl
-cd youtube-dl
-curl -L --silent $DOWNLOAD_URL | tar xz
+brew install youtube-dl
