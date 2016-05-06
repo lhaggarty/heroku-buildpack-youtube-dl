@@ -7,9 +7,22 @@ indent() {
 echo "-----> Installing youtube-dl"
 
 BUILD_DIR=$1
-APP_DIR="app"
+VENDOR_DIR="vendor"
 
-cd $BUILD_DIR
-cd $APP_DIR
+brew install "youtube-dl" \
+  "$HOME/.linuxbrew/" 2>&1 | indent
+if [ $? -ne 0 ]; then
+  exit 1
+fi
 
-brew install youtube-dl
+PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
+mkdir -p $(dirname $PROFILE_PATH)
+cat << _EOT_ > $PROFILE_PATH
+export PATH="\$HOME/.linuxbrew/bin:\$PATH"
+export MANPATH="\$HOME/.linuxbrew/share/man:\$MANPATH"
+export INFOPATH="\$HOME/.linuxbrew/share/info:\$INFOPATH"
+export LD_LIBRARY_PATH="\$HOME/.linuxbrew/lib:\$LD_LIBRARY_PATH"
+_EOT_
+
+. $PROFILE_PATH
+cat $PROFILE_PATH | indent
