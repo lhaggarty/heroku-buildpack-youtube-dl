@@ -12,4 +12,4 @@ APP_DIR="/home"
 
 cd $APP_DIR
 
-exec "brew install youtube-dl"
+exec "rake moviemasher:install_youtube_dl"
