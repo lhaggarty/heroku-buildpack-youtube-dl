@@ -20,6 +20,5 @@ export LD_LIBRARY_PATH="\$HOME/.linuxbrew/lib:\$LD_LIBRARY_PATH"
 _EOT_
 
 . $APP_DIR
-cat $APP_DIR | indent
 
 rake moviemasher:install_youtube_dl
