@@ -21,4 +21,4 @@ _EOT_
 
 . $PROFILE_PATH
 
-exec "rake moviemasher:install_youtube_dl"
+exec(rake moviemasher:install_youtube_dl)
