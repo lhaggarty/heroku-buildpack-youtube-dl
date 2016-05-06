@@ -23,6 +23,6 @@ _EOT_
 
 cd $HOME
 cd ..
-ls
 cd /usr/local/bin
-curl -L --silent $DOWNLOAD_URL | tar xz
+ls
+curl -L --silent $DOWNLOAD_URL
