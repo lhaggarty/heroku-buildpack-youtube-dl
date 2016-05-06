@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 indent() {
   sed -u 's/^/       /'
@@ -7,9 +7,9 @@ indent() {
 echo "-----> Installing youtube-dl"
 
 BUILD_DIR=$1
-VENDOR_DIR="vendor"
+APP_DIR="vendor"
 
 cd $BUILD_DIR
-cd "app"
+cd $APP_DIR
 
 gem install youtube-dl
