@@ -21,4 +21,4 @@ _EOT_
 
 cd $APP_DIR
 
-rake moviemasher:install_youtube_dl
+brew install youtube-dl
